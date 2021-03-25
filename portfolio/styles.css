@@ -1,0 +1,197 @@
+/*doctype css*/
+html{
+  scroll-behavior: smooth;
+}
+body { 
+  padding-left: 60px;
+  padding-right:60px;
+  margin-left:8vw;
+  margin-right:8vw;
+  color:#2e2e2e;
+  background-color:#F4EEEA;
+  font-family: "cabin";
+  margin: 0,auto;
+}
+#logo {
+  margin-right: 20px;
+  width: clamp(90px,9vw,9vw);
+  display:inline-block;
+  vertical-align: middle;
+
+}
+#header {
+  font-family: "cabin";
+  border-color: white;
+  padding-bottom: 60px;
+  padding-top: 70px;
+  position:relative;
+  }
+.alignleft {
+  float: left;
+}
+.alignright{
+  float:right;
+}
+.alignright2{
+  float: left;
+  text-align: left;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size:clamp(15px,1vw,1vw);
+  font-weight: 700;
+  padding-right:60px
+}
+h1{ 
+  margin:clamp(13px,1.82vw,1.82vw);
+  margin-left: 0;
+  font-size: clamp(33px,3vw,3vw);
+  display: inline-block;
+  vertical-align: middle;
+  }
+h2{
+  font-size: clamp(19px,2vw,2vw);
+  padding-top: 9px;
+  display: inline-block;
+  margin-left: 4vw;
+  text-decoration: underline;
+  }
+.top {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: clamp(30px,5vw,50px);
+  font-weight: bold;
+  text-align: center;
+  position:relative;
+  margin:3% 16% 3% 16%;
+  text-align: center; 
+}
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  font-family: "cabin";
+  border-color: white;
+  position:relative;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 65%;
+  align-items: center;}
+
+.flex-item-right {
+  padding-right: 10px;
+  padding-top: 10px;
+  flex: 35%;
+}
+.footer{
+  margin: 40px;
+  padding-right: 0;
+  float: right;
+ }
+ .footer a{
+   color:#707070;
+   text-decoration: none;
+   font-size: clamp(16px,1.2vw,1.2vw);
+   display: inline-block;
+ }
+ .email{padding-right: 40px;}
+ /* visited link */
+ a:visited {
+   color:#2e2e2e;
+ }
+ 
+ /* mouse over link */
+ a:hover {
+   color: palevioletred;
+ }
+ 
+ .myface {
+  margin-top: 10px;
+  margin-right:0px;
+  width: clamp(210px,24vw,24vw);
+  height: auto;
+  border-radius: 50%;
+  opacity: 87%;
+  box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.3);
+}
+.circle{
+  /*width:24vw;
+  height:auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  border-width: 2.9vw;*/
+  
+}
+
+.introtitle{
+  font-family: "cabin";
+  color:#63A980;
+  font-size: 4vw;
+  font-weight:bolder;
+  text-align: left;
+}
+
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  border-color: white;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.flexleft {
+  padding: 40px 0px 0px 40px;
+  flex: 50%;}
+
+.flexright {
+  padding: 60px 0px 0px 0px;
+  flex: 50%;
+}
+/* selected link */
+a:active {
+  color: #63A980
+}
+@media (max-width: 850px) {
+  .flex-container {
+    flex-direction: column;;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  .flexleft{
+    padding-left:0;
+  }
+  body {
+    padding-left: 30px;
+    padding-right:30px;
+    margin-left:4vw;
+    margin-right:4vw;}
+  #header {padding: 50px; padding-bottom: 20px;}
+  h2 {float: none; margin:2vw;}
+  #logo{float:none;margin-right: 1vw;}
+  .alignleft{float:none;}
+  .alignright{float:none;}
+  h1{margin-right: 0; float:none;margin-bottom: 0;}
+  .flex-item-right {padding:0;}
+  .flex-item-left {padding: 0;}
+  .footer{text-align: center; float: none;padding:0;margin:0,auto;width:auto;}
+  .introtitle {text-align: center;}
+  .alignright2{padding: 0;}
+}
+@media (max-width: 510px){
+  .email {padding-right:0;}
+  
+  body {
+    margin-left:2.5vw;
+    margin-right:2.5vw;}
+}
+@media (max-width: 950px){
+  .flex{margin-top:-30px;}
+}
