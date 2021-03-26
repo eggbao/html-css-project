@@ -3,6 +3,7 @@ html{
   scroll-behavior: smooth;
 }
 body { 
+  
   padding-left: 60px;
   padding-right:60px;
   margin-left:8vw;
@@ -38,7 +39,7 @@ body {
   font-family: 'Nanum Myeongjo', serif;
   font-size:clamp(15px,1vw,1vw);
   font-weight: 700;
-  padding-right:60px
+  padding-right:100px;
 }
 h1{ 
   margin:clamp(13px,1.82vw,1.82vw);
@@ -60,7 +61,8 @@ h2{
   font-weight: bold;
   text-align: center;
   position:relative;
-  margin:3% 16% 3% 16%;
+  margin:4% 16% 4% 16%;
+  padding-bottom: 55px;
   text-align: center; 
 }
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -85,7 +87,7 @@ h2{
   flex: 35%;
 }
 .footer{
-  margin: 40px;
+  margin: 80px 10px 50px 50px;
   padding-right: 0;
   float: right;
  }
@@ -115,79 +117,222 @@ h2{
   opacity: 87%;
   box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.3);
 }
-.circle{
-  /*width:24vw;
-  height:auto;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: white;
-  background-color: white;
-  border-width: 2.9vw;*/
-  
-}
 
 .introtitle{
   font-family: "cabin";
   color:#63A980;
-  font-size: 4vw;
+  font-size: clamp(30px,4vw,4vw);
   font-weight:bolder;
   text-align: left;
+  line-height: 5vw;
 }
 
 
 .flex{
   display: flex;
   flex-direction: row;
-  border-color: white;
   position:relative;
   align-items: center;
   justify-content: center;
-
   text-align: center;
 }
 
 .flexleft {
   padding: 40px 0px 0px 40px;
-  flex: 50%;}
+  flex: 45%;}
 
 .flexright {
-  padding: 60px 0px 0px 0px;
-  flex: 50%;
+  padding: 50px 0px 0px 0px;
+  flex: 55%;
+  line-height: clamp(20px,1.4vw,1.4vw)
 }
 /* selected link */
 a:active {
   color: #63A980
 }
+
+.csimage img {
+  width: clamp(220px,22vw,22vw);
+  height: auto;
+  margin-left:-10px;
+  margin-top:clamp(17px, 2.6vw,46px);
+  position:relative;
+}
+.csleft{
+  flex:50%;
+  padding-left:9vw;
+  padding-right: 1vw;
+}
+.csright{
+  padding-left:1vw;
+  padding-right: 9vw;
+}
+.csimage{
+  background-color: white;
+  border: 3px;
+  border-radius: 1%;
+  width:clamp(260px,27vw,27vw);
+  height:clamp(260px,27vw,27vw);
+  
+}
+.casestudy{
+  display:flex;
+  flex-direction: row;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  padding:80px calc(80px - 10vw) 0px calc(80px -10vw);
+}
+.casestudy2{
+  display:flex;
+  flex-direction: row;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  padding:80px calc(80px - 10vw) 0px calc(80px -10vw);
+}
+.title-description{ 
+  flex:50%;
+  text-align: left;
+  padding-right:9vw;
+  padding-left: 1vw;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size:clamp(15px,1vw,1vw);
+  font-weight: 700;
+}
+.title-description2{ 
+  flex:50%;
+  text-align: right;
+  padding-right:1vw;
+  padding-left: 9vw;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size:clamp(15px,1vw,1vw);
+  font-weight: 700;
+}
+.title{
+  margin-bottom: 1.2vw;;
+  font-family: 'cabin';
+  color:#cd7994;
+  font-weight: 800;
+  font-size: clamp(25px,2.5vw,2.5vw);
+  text-align: left;}
+
+  .title2{
+  margin-bottom: 1.2vw;;
+  font-family: 'cabin';
+  color:#cd7994;
+  font-weight: 800;
+  font-size: clamp(25px,2.5vw,2.5vw);
+  font-weight:bolder;
+  text-align: right;}
+
+.resume{
+  width: auto;
+  margin: 0px 9vw clamp(50px,3vw,3vw) 9vw;
+  display: flex;
+  font-family: "nanum myeongjo";
+  font-weight: 600;
+  font-size: clamp(15px,1vw,1vw);
+  flex-direction: row;
+  line-height: clamp(20px,1.4vw,1.4vw);
+  
+}
+.leftresume{
+  flex: 50%;
+  margin-right: 1vw;
+}
+.rightresume{
+  flex: 50%;
+  margin-left: 1vw;
+}
+.resume-title{
+  margin-left: 9vw;
+  font-family: 'cabin';
+  color:#cd7994;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: clamp(25px,2.5vw,2.5vw);
+  text-align: left;
+}
+.skills{
+  width: auto;
+  margin: 0px 9vw;
+  display: flex;
+  flex-direction: row;
+}
+.myinfo{
+  margin-top: 8vw;
+}
+.sectionbold{
+  font-family: "cabin";
+  font-weight: bold;
+  font-size: clamp(17px,1.2vw,1.2vw);
+  padding: 0vw 0vw 7px 0vw;
+}
+.bold{
+  font-weight: 800;
+  font-size: clamp(17px,1.1vw,1.1vw);
+}
+.italic{
+  font-style: italic;
+}
+.resumeinfo{
+  margin-left: clamp(25px,2.1vw,2.1vw);
+  
+}
+ul{
+  
+  font-size: clamp(16px,1vw,1vw);
+  font-family: "nanum myeonjo";
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 40px;
+}
 @media (max-width: 850px) {
-  .flex-container {
-    flex-direction: column;;
-  }
-  .flex{
-    flex-direction: column;
-  }
-  .flexleft{
-    padding-left:0;
-  }
-  body {
-    padding-left: 30px;
-    padding-right:30px;
-    margin-left:4vw;
-    margin-right:4vw;}
+  .flex-container {flex-direction: column;}
+  .flex{flex-direction: column;}
+  .flexleft{padding-left:0;}
+  .casestudy{flex-direction: column;}
+  .casestudy2{flex-direction: column-reverse;}
+  body {padding-left: 30px;padding-right:30px;margin-left:4vw;margin-right:4vw;}
   #header {padding: 50px; padding-bottom: 20px;}
   h2 {float: none; margin:2vw;}
   #logo{float:none;margin-right: 1vw;}
   .alignleft{float:none;}
   .alignright{float:none;}
+  .top{padding-bottom: 1vw;}
   h1{margin-right: 0; float:none;margin-bottom: 0;}
   .flex-item-right {padding:0;}
   .flex-item-left {padding: 0;}
   .footer{text-align: center; float: none;padding:0;margin:0,auto;width:auto;}
   .introtitle {text-align: center;}
   .alignright2{padding: 0;}
+  .title-description {padding: 0; text-align: center;}
+  .title {text-align: center; margin-top: 25px; margin-bottom: 10px;}
+  .title2 {text-align: center; margin-top: 25px; margin-bottom: 10px;}
+  .title-description2{padding: 0; text-align: center;}
+  .csleft{padding:0;}
+  .csright{padding:0}
+  .flexright{margin: 0px 6vw;padding-top: 7.5vw;}
+  .resume-title{ text-align: center;margin-left: 0;}
+  .resume{flex-direction: column;}
+  .leftresume{margin-top:10px;margin-right: 0;}
+  .rightresume{margin-top: 10px;margin-left: 0;}
+  .skills{
+    flex-direction: column;
+  }
+  ul{list-style-position: inside;
+    padding-bottom: 1vw;
+    padding-inline-start: 0px;
+  }
 }
 @media (max-width: 510px){
   .email {padding-right:0;}
-  
+  .top{padding-bottom: -2vw;}
   body {
     margin-left:2.5vw;
     margin-right:2.5vw;}
