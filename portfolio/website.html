@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="my portfolio">
+    <meta name="keywords" content="UX, PW, content creator">
+    <title>Louise Depa's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex-container" id="header">
+        <div class = flex-item-left>   
+            <div class ="alignleft"><a href="index.html" style="text-decoration: none;">
+                <img src="heart.png" id="logo"></img>
+                <h1>LOUISE DEPA</h1>
+                </a>
+            </div>
+        </div>
+        <div class ="flex-item-right"> 
+            <div class ="alignright">
+                <a href="index.html#work"><h2>Work</h2></a>
+                <a href="about.html"><h2>About</h2></a>
+            </div>
+        </div>
+    </div>
+    <div class = "topcs">WEBSITE FLEXBOX</div>
+    <div class="sectionbold" style="text-align: center;">Project & Objective</div>
+    <div class="csbody">One basic aspect of usability in a website is having your website work on all different sizes of devices, especially mobile phones. This is called responsive web design.
+
+    For my website, I really tried to focus on this concept but it wasn’t something that I could just do with the basic CSS knowledge that I had. 
+    In order to create a responsive website and solve the problem I was having, I needed to use the CSS flexbox layout.<p></p>
+
+Flexbox Layout is something that you can do with CSS in order to have an easy way to lay out and align items in a container, allowing them to change in dimensions in order to best fill the space or the screen.
+
+For example, you can use flexbox to shrink a row of items, and let it change into a column of items on a smaller screen.
+
+This is usually used with media queries.
+
+    </div>  
+
+    <div class="sectionbold" style="text-align: center;">Work</div>
+    <div class="csbody"><img src="mywork1.png" class="csbodyimg" style=" height: clamp(200px,20vw,300px);"><br>This is the code I used for my website’s header in order to make it mobile friendly. Above is an image of my html code. 
+        As you can see, both left and right flex items are nested inside the flex container.
+        <br><img src="mywork2.png" class ="csbodyimg" style=" height: clamp(300px,20vw,500px);">
+        <p>As shown in the image of my CSS for this flexbox, the right flex items took up only 35% of the container by having the flex be set to 35%. The right flex item also contained buttons to other pages. </p>
+        <br> <img src="mywork3.png" class="csbodyimg"style=" width: clamp(300px,20vw,500px); height:auto">
+        <p>In addition to this, media queries were also used in order to make the flexbox scale up or down in size relative to the screen size.</p>
+</div> 
+
+    <div class="sectionbold" style="text-align: center;">End Result</div>
+    <div class="csbody">By using flexbox, I was able to create this responsive, mobile friendly header. It shrinks as the browser width shrank, and also it turned into a column display instead of a row display for better mobile capabilities
+        I also ended up using flexbox for almost everything else in my website because its a very powerful tool if you want to have a responsive website.
+        <br><img src="flexbox.gif" class="csbodyimg">
+    </div> 
+
+    <div class="sectionbold" style="text-align: center;">Reflection</div>
+    <div class="csbody">While doing this project,  I learned that using flexbox for your website can be an extremely useful part of CSS if you are trying to make a responsive web site.
+
+        I initially thought that using flexbox would be super complicated, but it definitely got a lot easier to understand after trying to use it a couple times.<p></p>
+        
+        If I were to try to make my website again or do another website, I would definitely start using flexbox right when I start coding in order to get the basic layout of what I wanted my site to be before putting colors and styling in order to not get confused.
+    </div> 
+    <div class="footer">
+        <a href="mailto:depaloui@msu.edu" class ="email">depaloui@msu.edu</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+    </div>
+</body>

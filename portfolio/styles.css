@@ -3,7 +3,6 @@ html{
   scroll-behavior: smooth;
 }
 body { 
-  
   padding-left: 60px;
   padding-right:60px;
   margin-left:8vw;
@@ -64,6 +63,48 @@ h2{
   margin:4% 16% 4% 16%;
   padding-bottom: 55px;
   text-align: center; 
+} 
+.cslink{
+  padding-top: clamp(8px, 1vw,15px);
+  padding-bottom: 8px;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #000 #000 #63A980;
+  width: fit-content;
+  color:#63A980;
+  font-size: clamp(12px, 1vw,14px);
+  font-weight: 800;
+  display: block;
+}
+.cslink a{
+  color:#63A980;
+  text-decoration: none;
+}
+/* case study page*/
+.topcs{
+  font-family: "cabin";
+  color:#63A980;
+  font-weight: bolder;
+  font-size: clamp(45px,6vw,85px);
+  text-align: center;
+  position:relative;
+  margin:4% 16% 4% 16%;
+  padding-bottom: 55px;
+  text-align: center; 
+}
+.csbody{
+  margin-bottom: 10px;
+  text-align: left;
+  padding:80px calc(80px - 10vw) 0px calc(80px -10vw);
+  font-family: "nanum myeongjo";
+  font-weight: 600;
+  font-size: clamp(15px,1vw,1vw);
+  line-height: clamp(20px,1.4vw,1.4vw);
+}
+.csbodyimg {
+  display: block;
+  margin:auto;
+  height: clamp(200px,20vw,400px);
 }
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 .flex-container {
@@ -98,8 +139,8 @@ h2{
    display: inline-block;
  }
  .email{padding-right: 40px;}
- /* visited link */
- a:visited {
+ /* link */
+ a {
    color:#2e2e2e;
  }
  
@@ -221,7 +262,11 @@ a:active {
   font-size: clamp(25px,2.5vw,2.5vw);
   text-align: left;}
 
-  .title2{
+.title a{
+  color:#cd7994;
+  text-decoration: none;
+}
+.title2{
   margin-bottom: 1.2vw;;
   font-family: 'cabin';
   color:#cd7994;
@@ -230,6 +275,10 @@ a:active {
   font-weight:bolder;
   text-align: right;}
 
+.title2 a{
+  color:#cd7994;
+  text-decoration: none;
+}
 .resume{
   width: auto;
   margin: 0px 9vw clamp(50px,3vw,3vw) 9vw;
@@ -292,6 +341,7 @@ ul{
   margin-block-end: 0px;
   padding-inline-start: 40px;
 }
+/*media sizing*/
 @media (max-width: 850px) {
   .flex-container {flex-direction: column;}
   .flex{flex-direction: column;}
@@ -322,6 +372,9 @@ ul{
   .resume{flex-direction: column;}
   .leftresume{margin-top:10px;margin-right: 0;}
   .rightresume{margin-top: 10px;margin-left: 0;}
+  .cslink{
+    margin: auto;
+  }
   .skills{
     flex-direction: column;
   }
